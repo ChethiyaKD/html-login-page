@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Poppins Medium";
+  src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #d2d0de;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper .card {
+  width: 893px;
+  height: 594px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .card .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "Poppins Medium";
+  font-size: 11px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.wrapper .card .logo .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container .side {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .side-image-container {
+  background: #f3f4f8;
+}
+
+.container .side-image-container .purple-circle {
+  width: 148px;
+  height: 148px;
+  background: #8554e2;
+  border-radius: 50%;
+}
+
+.container .side-image-container .blur-overlay {
+  width: 100%;
+  height: 40%;
+  background: rgba(243, 244, 248, 0.77);
+  position: absolute;
+  backdrop-filter: blur(6px);
+  transform: translateY(50%);
+  z-index: 99;
+}
+
+.container .side .form-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .side .form-container h2 {
+  font-family: "Poppins Medium";
+}
+
+.container .side .form-container .sub-heading {
+  font-family: "Poppins Regular";
+  color: #a2a1a8;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.container .side .form-container .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-top: 26px;
+}
+
+.container .side .form-container .input-wrapper .input-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.container .side .form-container .input-wrapper .input-container .input-label {
+  font-family: "Poppins Medium";
+  font-size: 10px;
+  color: #393939;
+}
+
+.container .side .form-container .input-wrapper .input-container .input {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #eaebed;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 12px;
+  outline: none;
+}
+
+.container .side .form-container .input-wrapper .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins Regular";
+  font-size: 10px;
+}
+
+.container .side .form-container .input-wrapper .row .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.container .side .form-container .input-wrapper .link {
+  color: #8554e2;
+  text-decoration: none;
+}
+
+.container .side .form-container .input-wrapper .button-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.container .side .form-container .input-wrapper .button-container .button {
+  width: 100%;
+  height: 30px;
+  font-family: "Poppins Medium";
+  font-size: 12px;
+  border-radius: 8px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .side .form-container .input-wrapper .button-container .primary {
+  background: #8554e2;
+  color: #fff;
+}
+.container .side .form-container .input-wrapper .button-container .google {
+  background: #fff;
+  color: #000;
+  border: 2px solid #eaebed;
+  column-gap: 8px;
+}
+
+.container .side .form-container .input-wrapper .button-container .google img {
+  width: 18px;
+}
+
+.container .side .form-container .input-wrapper .signup-link {
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins Regular";
+  font-size: 11px;
+}
+
+.footer {
+  position: absolute;
+  font-family: "Poppins Regular";
+  font-size: 8px;
+  color: #a2a1a8;
+  bottom: 20px;
+  left: 20px;
+}
